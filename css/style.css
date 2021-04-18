@@ -1,0 +1,121 @@
+body {
+    margin: 0px;
+    background: #1f1f1f;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    height: calc(100vh - 40px);
+    width: 100vw;
+    margin: auto;
+    margin-top: 40px;
+}
+
+/* Header Section */
+
+.header {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid #bababa;
+    border-radius: 10px;
+}
+
+.header__title {
+    width: 100%;
+}
+
+.header__title h1 {
+    margin: 0px;
+    font-size: 25px;
+    font-weight: 800px;
+    color: #bababa;
+}
+
+/* Scoreboard Section */
+
+.scoreboards-container {
+    display: flex;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100px;
+    background-color: #bababa;
+    border-radius: 6px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.scoreboard__title {
+    text-align: center;
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #1f1f1f;
+    font-weight: 700;
+    margin: 0px;
+}
+
+#playerScore, #computerScore {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0px;
+    color: #1f1f1f;
+}
+
+/* Game Section */
+
+.game {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.game div {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Game Options */
+
+.game__option {
+    padding: 20px;
+    background: #ffffff;
+    width: 64px;
+    margin: 30px;
+}
+
+/* Game  Options Animations */
+
+.game__option:active {
+    animation: pulse 0.1s ease-out;
+}
+
+/* Icon Borders */
+
+.border-blue {
+    border: 14px solid #4E6BF3;
+}
+
+.border-yellow {
+    border: 14px solid #EBA722;
+}
+
+.border-red {
+    border: 14px solid #DD3E58;
+}
+
+@media only screen and (max-width: 500px) {
+    .game__option-line{
+      display: none;
+    }
+  }

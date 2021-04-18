@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock / Paper / Scissors</title>
+    <script src="https://kit.fontawesome.com/e9f9599f85.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/shifumi.ico">
+</head>
+
+<body>
+    <div class="container">
+        
+        <!-- Header Section -->
+        <section class="header">
+            <div class="header__title">
+                <h1>
+                    ROCK<br>
+                    PAPER<br>
+                    SCISSORS
+                </h1>
+            </div>
+            <div class="scoreboards-container">
+                <div class="scoreboard">
+                    <p class="scoreboard__title">PLAYER SCORE</p>
+                    <div>
+                        <p id="playerScore">0</p>
+                    </div>
+                </div>
+                <div class="scoreboard">
+                    <p class="scoreboard__title">COMPUTER SCORE</p>
+                    <div>
+                        <p id="computerScore">0</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Section -->
+        <section class="game">
+            <div id="paper" class="gameButton">
+                <img src="assets/icon-paper.svg" class="game__option border-blue" />
+            </div>
+            <div id="scissors" class="gameButton">
+                <img src="assets/icon-scissors.svg" class="game__option border-yellow" />
+            </div>
+            <div id="rock" class="gameButton">
+                <img src="assets/icon-rock.svg" class="game__option border-red" />
+            </div>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
